@@ -44,7 +44,7 @@ def generate(text, count, trigram_threshold=0.5, verbose=1, start='.'):
     return message
 
 
-message = generate(text, 1000, trigram_threshold=0.5)
+message = generate(text, 1000, trigram_threshold=0.4)
 
 # Capitalize after period
 message = ' . '.join(map(lambda s: s.strip().capitalize(), message.split('.')))
